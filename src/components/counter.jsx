@@ -30,6 +30,7 @@ class Counter extends Component {
     inputData = inputData.replace(/,/g, "");
     inputData = inputData.replace(/\./g, "");
     inputData = inputData.replace(/^0+/, "");
+    inputData = inputData.replace(/[-\+=()*&^%$#@!]/g, "");
 
     if (inputData === "") {
       inputData = "0";
